@@ -1,0 +1,142 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Fringos</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/jquery.js" type="text/javascript"></script>
+  <script src="js/jquery-2.1.4.js" type="text/javascript"></script>
+  <script src="js/bootstrap.bundle.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="fixed-top">
+  <div class="hair container-fluid bg-white">
+    <div class="row">
+      <div class="col-md-5"></div>
+      <div class="col-md-7 text-right topbar mb-0">
+        <p class="text-black font-weight-bold mb-0 ">Contact Us-<img src="images/ayush4.jpg" class="ml-1px" width="10px" height="15px">+91-8076093182
+        <a href="https://www.youtube.com/"><img src="images/ayush5.jpg" class="mb-0 ml-1px" width="30px"></a>
+        <a href="https://twitter.com/"><img src="images/ayush6.jpg" class="mb-0 ml-1px" width="22px"></a>
+        <a href="https://www.facebook.com/"><img src="images/ayush7.jpg" class="mb-0 ml-1px" width="21px"></a>
+        <a href="https://www.instagram.com/"><img src="images/ayush8.jpg" class="mb-0 ml-1px" width="27px"></a>      
+        </p>
+      </div> 
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+                <div class="logo">
+                  <img src="images/logo1.jpg"  class="logo1" width="40px" height="45px">
+                </div>
+          <h3 class="logo2 navbar-brand text-warning font-weight-bold ml-1">Fringos</h3>
+                <button class="logo3 navbar-toggler" type="button" data-toggle="collapse" data-target=" #collapsenavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div  class="collapse navbar-collapse text-center" id="collapsenavbar">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item  rounded-lg active">
+                            <a href="index.html" class="nav-link rounded-lg text-white">HOME</a>
+                        </li>
+                        <li class="nav-item rounded-lg ">
+                            <a href="portfolio.html" class="nav-link rounded-lg text-white">SERVICE</a>
+                        </li>
+                        <li class="nav-item rounded-lg ">
+                            <a href="aboutus.html" class="nav-link rounded-lg text-white">ABOUT US</a>
+                        </li>
+                        <li class="nav-item1 rounded-lg ">
+                            <a href="#" class="nav-link rounded-lg text-white">CONTACT US</a>
+                        </li>   
+                    </ul>
+                </div>
+    </div>
+  </nav>
+</div>
+<div class="image bg-danger">
+  <form method="post" action="contactus.php">
+  <div class="row ananya"> 
+    <div class="form-group">  
+        <div class="annu col-lg-8 col-md-7 col-sm-5 col-4 d-block ml-auto mb-auto mt-3">  
+        <label class="text-white">First Name:</label>
+        <input  class="form-control" required="required" type="text" name="firstname" id="name_err" placeholder="Enter First Name"/>
+        <span id="name_error"></span>
+      </div>
+      <div class="annu col-lg-8 col-md-7 col-sm-5 col-4 d-block ml-auto mb-auto">
+        <label class="text-white">Phone no :</label>
+        <input  class="form-control" required="required" type="text" name="phone" id="phone_err" placeholder="Enter Phone no"/>
+        <span id="phone_error"></span>
+      </div>
+      <div class="annu col-lg-8 col-md-7 col-sm-5 col-4 d-block ml-auto mb-auto">
+        <label class="text-white">Email id :</label>
+        <input class="form-control" required="required" type="text" name="email" id="email_err" placeholder="Enter Email id"/>
+        <span id="email_error"></span>
+      </div>
+      <div class="annu col-lg-8 col-md-7 col-sm-5 col-4 d-block ml-auto mb-auto">
+        <label class="text-white">Message :</label><textarea  required="required" class="form-control" cols="93" rows="1" name="message" id="message_err" placeholder="Enter message"></textarea>
+        <span id="message_error"></span>
+        <p class="text-center mt-2">
+          <button type="submit" class="btn btn-dark rounded-pill" name="submit" id="submitbtn">Submit</button>
+        </p>
+      </div>
+    </div>
+  </div>
+  </form>
+  <div class="hello ml-10 text-secontary">
+    <h2 class="font-weight-bold ">Feel Free To Contact</h2>
+    <p class="font-weight-bold ml-3">Hello Everyone! Have a great day .<br> I am here to help you. If you want <br> to know something or you have<br>  any suggestion then please mail me.<br>Thank You.</p>
+  </div>
+  <div class="row hell ml-10 mt-4 text-secontary"><img src="images/logo7.jpg"  width="25px" height="30px"><p class="font-weight-bold  ml-1">Ballabgarh,Faridabad,Delhi</p></div>
+    <div class="row hell ml-10 mt-1 text-secontary"><img src="images/logo9.jpg"  width="35px" height="35px"><p class="font-weight-bold ml-1">www.fringos.com</p></div>
+  <footer class="footer bg-dark">
+    <h6 class="text-center text-white">
+      Copyright © 2022,Developer by Ayush Pandey
+    </h6>
+  </footer>
+</div>
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/jquery.js" type="text/javascript"></script>
+<script src="js/jquery-2.1.4.js" type="text/javascript"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#submitbtn").click(function(){
+      var username = $('#name_err').val();
+      var userphone = $('#phone_err').val();
+      var useremail = $('#email_err').val();
+      var usermessage = $('#message_err').val();
+      
+      if(username=="") {
+        $('#name_error').html('Enter the Name');
+        $('#name_error').css('color','white');
+        return false;     
+      }
+
+      var phone = /^\d{10}$/;
+      if(!phone.test(userphone))  { 
+        $('#phone_error').html('Enter the Phone No');
+        $('#phone_error').css('color','white');   
+        return false;     
+      }
+
+      var email = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+      if(!email.test(useremail)) {
+        $('#email_error').html('Enter the email id');
+        $('#email_error').css('color','white');
+        return false;     
+      }
+
+      if(usermessage=="") {
+        $('#message_error').html('Enter the message');
+        $('#message_error').css('color','white'); 
+        return false; 
+      }
+
+    });
+  })
+</script>
+<!--///////////////////////////FOOTER///////////////////////////-->
+</body>
+</Html>
